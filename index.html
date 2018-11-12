@@ -28,16 +28,21 @@ map.on("load", function () {
           type: "geojson",
           data: {
             type: "FeatureCollection",
-            features:[{"type":"Feature",
-            "properties": {
-                        "description": "This is a test",
-                        "icon": "theatre"
-                    },
-            "geometry":{
+            features:[
+            {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "This is a test",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
               "type":"Point",
               "coordinates":["-84.74","39.51"]
-
-            }}]}
+            }
+          }]
+        }
         },
         layout: {
           "icon-image": "custom-marker",
@@ -63,6 +68,5 @@ map.on('click', 'markers', function (e) {
             .addTo(map);
     });
 </script>
-
 </body>
 </html>
