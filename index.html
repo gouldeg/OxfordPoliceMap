@@ -1,6 +1,20 @@
 <html>
+<head>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+</head>
 <body bgcolor="#FA8072">
 <H1 align="center"> Oxford Police Map </H1>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49252.58834935604!2d-84.77678740176489!3d39.50801689701356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403d0e27bb9233%3A0x694f077b0f7aafcc!2sOxford%2C+OH+45056!5e0!3m2!1sen!2sus!4v1542035364825" width="1250" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id='map' style='width: 100%; height: 90%;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpZ291bGQiLCJhIjoiY2o5N24yaThyMDkzMjMzczRvcHVoZzMyOCJ9._i9a2Mt-xua1JVoDBGZrKA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v10',
+center: [-84.74, 39.51], // starting position
+zoom: 13 // starting zoom
+});
+</script>
+
 </body>
 </html>
