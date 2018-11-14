@@ -5,18 +5,18 @@
 </head>
 <body bgcolor="#FA8072">
 <H1 align="center"> Oxford Police Map </H1>
-<div id='map' style='width: 100%; height: 90%;'></div>
+<div id='map' style='width: 100%; height: 100%;'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpZ291bGQiLCJhIjoiY2o5N24yaThyMDkzMjMzczRvcHVoZzMyOCJ9._i9a2Mt-xua1JVoDBGZrKA';
 var map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v10',
-center: [-84.74, 39.51], // starting position
-zoom: 13 // starting zoom
+center: [-84.741, 39.5101], // starting position
+zoom: 14 // starting zoom
 });
 map.on("load", function () {
   /* Image: An image is loaded and added to the map. */
-  map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+  map.loadImage("https://i.imgur.com/IXd7InJ.png", function(error, image) {
       if (error) throw error;
       map.addImage("custom-marker", image);
       /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
@@ -33,15 +33,212 @@ map.on("load", function () {
             "type":"Feature",
             "properties":
             {
-              "description": "This is a test",
+              "description": "Southwest corner of the hub",
               "icon": "theatre"
             },
             "geometry":
             {
               "type":"Point",
-              "coordinates":["-84.74","39.51"]
+              "coordinates":["-84.73507","39.50824"] 
             }
-          }]
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Cook Field",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.73","39.50825"] 
+            }
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Bishop Woods",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.7326","39.50925"] 
+            }
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Slant Walk",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.73735","39.509299"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Central Quad",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.73507","39.50524"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "South Quad",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.7341","39.5037"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Met Quad",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.732","39.50215"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Western Path",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.7295","39.50215"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "McKee Hall",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.7259","39.5027"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Western Dining",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.729247","39.5046"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Western Residence Halls",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.728","39.5052"] 
+            }
+          },
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Rec Center",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.73775","39.5034"] 
+            }
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Symmes Hall",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.7293","39.5117"] 
+            }
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "East Quad",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.7276","39.51093"] 
+            }
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Swing Hall",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.73445","39.511"] 
+            }
+          }, 
+		  {
+            "type":"Feature",
+            "properties":
+            {
+              "description": "Millett Parking Lot",
+              "icon": "theatre"
+            },
+            "geometry":
+            {
+              "type":"Point",
+              "coordinates":["-84.736","39.5175"] 
+            }
+          }
+		  
+		  ]
         }
         },
         layout: {
